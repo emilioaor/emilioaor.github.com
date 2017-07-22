@@ -1,6 +1,8 @@
 
 $(window).on("load", function() {
 	$("#loading").css('display', 'none');
+
+	if (screen.width > 767) initSlider();
 });
 
 $(window).on("scroll", function() {

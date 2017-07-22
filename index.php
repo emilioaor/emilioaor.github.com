@@ -15,6 +15,7 @@
 	<title>Emilio Ochoa</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="slider/css/style.css">
 </head>
 <body>
 	
@@ -57,14 +58,26 @@
 
 	<section id="top">
 		
-		<div class="container">
-			<h1 class="main-title text-center">Soy Emilio Ochoa bienvenido a mi portafolio!</h1>
-			<hr class="hr">
-			<p class="text-center">Sea bienvenido a mi portafolio virtual, aquí encontraras una pequeña muestra de mi y de mis trabajos y como siempre estaré disponible para atender cualquier solicitud.</p>
+		<div class="slider">
+			<div id="fade"></div>
+			<ul>
+				<li id="slider-text">
+					<div class="container">
+						<h1 class="main-title text-center">Soy Emilio Ochoa bienvenido a mi portafolio!</h1>
+						<hr class="hr">
+						<p class="text-center">Sea bienvenido a mi portafolio virtual, aquí encontraras una pequeña muestra de mi y de mis trabajos y como siempre estaré disponible para atender cualquier solicitud.</p>
 
-			<div class="text-center">
-				<button type="button" onclick="goTo('#information')" class="btn-primary-giant">Ver mas</button>
-			</div>
+						<div class="text-center">
+							<button type="button" onclick="goTo('#information')" class="btn-primary-giant">Ver mas</button>
+						</div>
+					</div>
+				</li>
+				<li id="slider-item1"></li>
+				<li id="slider-item2"></li>
+				<li id="slider-item3"></li>
+				<li id="slider-item4"></li>
+			</ul>
+
 		</div>
 
 	</section>
@@ -473,5 +486,6 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="slider/js/main.js"></script>
 </body>
 </html>
