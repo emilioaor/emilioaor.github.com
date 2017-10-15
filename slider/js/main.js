@@ -3,7 +3,7 @@ var timeToInvisible = 400;
 var timeToVisible = 800;
 
 function initSlider() {
-	window.setInterval(changeImage, 10000);
+	window.setInterval(changeImage, 5000);
 }
 
 function changeImage() {

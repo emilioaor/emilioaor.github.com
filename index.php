@@ -104,7 +104,7 @@
 						<li><strong>Lugar de nacimiento: </strong>Valencia</li>
 						<li><strong>Nacionalidad: </strong>Venezolano</li>
 						<li><strong>Estado civil: </strong>Soltero</li>
-						<li><strong>Edad: </strong>24 años</li>
+						<li><strong>Edad: </strong>25 años</li>
 					</ul>
 				</div>
 
@@ -285,7 +285,7 @@
 			<h2 class="secondary-title text-center">Portafolio</h2>
 			<hr class="hr">
 			
-			<div class="row">
+			<div class="row port-row">
 				
 				<!-- Porfolio item -->
 				<div class="col-xs-6 col-md-3">
@@ -358,6 +358,32 @@
 
 				<!-- Porfolio item -->
 				<div class="col-xs-6 col-md-3">
+					<a href="https://github.com/emilioaor/tu-hipico-online" target="_blank">
+						<div class="portfolio-item">
+							<h4>Tu hipico online <span class="text-warning">(Github)</span></h4>
+							<img src="img/portfolio/hipico.jpg" class="img-responsive" alt="Acortador de enlaces" title="Acortador de enlaces">
+							<p class="text-justify">
+								Sistema para el control de apuestas de carrera de caballos.
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<!-- Porfolio item -->
+				<div class="col-xs-6 col-md-3 clear-991">
+					<a href="https://github.com/emilioaor/loteria-de-animalitos" target="_blank">
+						<div class="portfolio-item">
+							<h4>Lotería de animalitos <span class="text-warning">(Github)</span></h4>
+							<img src="img/portfolio/animalito.jpg" class="img-responsive" alt="Acortador de enlaces" title="Acortador de enlaces">
+							<p class="text-justify">
+								Sistema para la venta de lotería de animalitos.
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<!-- Porfolio item -->
+				<div class="col-xs-6 col-md-3">
 					<a href="https://github.com/emilioaor/consultoria-legal" target="_blank">
 						<div class="portfolio-item">
 							<h4>Consultoría legal <span class="text-warning">(Github)</span></h4>
@@ -369,8 +395,12 @@
 					</a>
 				</div>
 				
+			</div>
+
+			<div class="row">
+
 				<!-- Porfolio item -->
-				<div class="col-xs-6 col-md-3 clear-991">
+				<div class="col-xs-6 col-md-3">
 					<a href="https://github.com/emilioaor/crea-tu-cine" target="_blank">
 						<div class="portfolio-item">
 							<h4>Crea tu cine online <span class="text-warning">(Github)</span></h4>
@@ -395,12 +425,8 @@
 					</a>
 				</div>
 
-			</div>
-
-			<div class="row">
-
 				<!-- Porfolio item -->
-				<div class="col-xs-6 col-md-3">
+				<div class="col-xs-6 col-md-3 clear-991">
 					<a href="https://github.com/emilioaor/laravel-lista-de-cumpleaneros" target="_blank">
 						<div class="portfolio-item">
 							<h4>Publica cumpleaños <span class="text-warning">(Github)</span></h4>
