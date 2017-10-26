@@ -554,7 +554,7 @@
 					</ul>
 				</div>
 				<div class="modal-footer">
-					<a href="#" class="btn btn-primary">
+					<a href="http://control-solicitudes.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
 						<i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
 					</a>
 					<button type="button" class="btn btn-danger" data-dismiss="modal">
@@ -600,7 +600,7 @@
 					</ul>
 				</div>
 				<div class="modal-footer">
-					<a href="#" class="btn btn-primary">
+					<a href="http://control-inventario.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
 						<i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
 					</a>
 					<button type="button" class="btn btn-danger" data-dismiss="modal">
@@ -658,7 +658,7 @@
 					</ul>
 				</div>
 				<div class="modal-footer">
-					<a href="#" class="btn btn-primary">
+					<a href="http://pec.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
 						<i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
 					</a>
 					<button type="button" class="btn btn-danger" data-dismiss="modal">
@@ -730,7 +730,7 @@
 					</ul>
 				</div>
 				<div class="modal-footer">
-					<a href="#" class="btn btn-primary">
+					<a href="http://maquinaria-pesada.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
 						<i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
 					</a>
 					<button type="button" class="btn btn-danger" data-dismiss="modal">
@@ -777,7 +777,7 @@
 
 				</div>
 				<div class="modal-footer">
-					<a href="#" class="btn btn-primary">
+					<a href="http://acorta-enlaces.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
 						<i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
 					</a>
 					<button type="button" class="btn btn-danger" data-dismiss="modal">
@@ -844,7 +844,7 @@
 
 				</div>
 				<div class="modal-footer">
-					<a href="#" class="btn btn-primary">
+					<a href="http://hipico.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
 						<i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
 					</a>
 					<button type="button" class="btn btn-danger" data-dismiss="modal">
@@ -906,7 +906,7 @@
 
 				</div>
 				<div class="modal-footer">
-					<a href="#" class="btn btn-primary">
+					<a href="http://animalitos.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
 						<i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
 					</a>
 					<button type="button" class="btn btn-danger" data-dismiss="modal">
@@ -1027,7 +1027,7 @@
 					</ul>
 				</div>
 				<div class="modal-footer">
-					<a href="" class="btn btn-primary">
+					<a href="http://crea-tu-cine.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
 						<i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
 					</a>
 					<button type="button" class="btn btn-danger" data-dismiss="modal">
@@ -1073,7 +1073,7 @@
 					</ul>
 				</div>
 				<div class="modal-footer">
-					<a href="" class="btn btn-primary">
+					<a href="http://cineencasa.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
 						<i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
 					</a>
 					<button type="button" class="btn btn-danger" data-dismiss="modal">
@@ -1117,7 +1117,7 @@
 					</ul>
 				</div>
 				<div class="modal-footer">
-					<a href="" class="btn btn-primary">
+					<a href="http://cumple.emilioochoa.com.ve" target="_blank" class="btn btn-primary">
 						<i class="glyphicon glyphicon-eye-open"></i>	Ir al demo
 					</a>
 					<button type="button" class="btn btn-danger" data-dismiss="modal">
