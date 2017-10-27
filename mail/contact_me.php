@@ -27,7 +27,7 @@ $mail->IsSMTP();
 // Configuración del servidor SMTP
 $mail->Port = 25;
 $mail->Host = 'aspmx.l.google.com';
-$mail->SMTPDebug  = 2;
+$mail->SMTPDebug  = 0;
 // Configuración cabeceras del mensaje
 $mail->From = "emilioaor@gmail.com";
 $mail->FromName = "Mi portafolio";
