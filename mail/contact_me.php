@@ -23,19 +23,16 @@ $mail = new PHPMailer(true);
  
 // Configuramos el protocolo SMTP con autenticación
 $mail->IsSMTP();
-$mail->SMTPAuth = true;
  
 // Configuración del servidor SMTP
-$mail->Port = 465;
-$mail->Host = 'smtp.gmail.com';
-$mail->Username   = "emilioaor@gmail.com";
-$mail->Password = "emi21029522lio";
-$mail->SMTPAuth   = true;
+$mail->Port = 25;
+$mail->Host = 'aspmx.l.google.com';
+$mail->SMTPDebug  = 2;
 // Configuración cabeceras del mensaje
 $mail->From = "emilioaor@gmail.com";
 $mail->FromName = "Mi portafolio";
  
-$mail->AddAddress("emilioaor@gmail.com");
+$mail->AddAddress("emilioaor@gmail.com", "Emilio O");
 $mail->Subject = "Mi portafolio - Contactos:  $name";
  
 // Creamos en una variable el cuerpo, contenido HMTL, del correo
