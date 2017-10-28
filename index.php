@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="slider/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cantata+One|Oswald|Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
 	
