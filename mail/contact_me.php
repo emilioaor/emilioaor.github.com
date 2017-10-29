@@ -56,7 +56,7 @@ $mail->Subject = "Mi portafolio - Contactos:  $name";
 // Creamos en una variable el cuerpo, contenido HMTL, del correo
 require 'emailTemplate.php';
  
-$mail->Body = $body;
+$mail->MsgHTML($body);
  
 // Enviar el correo 
 if (! $mail->Send()) {
