@@ -7,10 +7,58 @@
 		<link href='https://fonts.googleapis.com/css?family=Cantata+One|Oswald|Roboto+Condensed' rel='stylesheet'>
 	</head>
 	<body>
-		<link rel='stylesheet' href='https://emilioochoa.com.ve/css/styles.css'>
 		<style>
 			* {
 				box-sizing: border-box;
+			}
+			html, body {
+				font-family: 'Roboto Condensed', sans-serif;
+			}
+			h1, h2 {
+				font-family: 'Cantata One', serif;
+			}
+			h3, h4, h5, h6 {
+				font-family: 'Oswald', sans-serif;
+			}
+			.social-icon {
+				display: block;
+				width: 45px;
+				height: 44px;
+				background-image: url(../img/social-icons/social-icons.svg);
+				background-color: #f05f40;
+				background-repeat: no-repeat;
+				border-radius: 100%;
+				box-shadow: 0 .3rem .6rem rgba(0,0,0,.3);
+				transition: all .2s;
+			}
+			.social-icon:hover {
+				box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+				transform: translateY(-.3rem);
+			}
+			.facebook {
+				background-position: -39px -40px;
+			}
+			.youtube {
+				background-position: -39px -100px;
+			}
+			.linkedin {
+				background-position: -399px -40px;
+			}
+			.github {
+				background-position: -159px -280px;
+			}
+			#social ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			#social li {
+				display: inline-block;
+				padding: .5rem;
+			}
+			#social a {
+				width: 45px;
+				height: 45px;
 			}
 			.container {
 				max-width: 700px;
@@ -34,6 +82,8 @@
 				text-align: center;
 			}
 			.secondary-title {
+				text-transform: uppercase;
+				font-weight: bold;
 				font-size: 18px;
 				text-align: center;
 			}
@@ -98,4 +148,4 @@
 	</body>
 	</html>
 
-"; ?>
+";echo $body; ?>
