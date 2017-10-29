@@ -1,9 +1,15 @@
 <?php
 session_start();
+
 // Check for empty fields
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
    empty($_POST['message'])	||
+   empty($_POST['goals'])   ||
+   empty($_POST['references'])   ||
+   empty($_POST['references2'])   ||
+   empty($_POST['amount'])   ||
+   empty($_POST['endTime'])   ||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
    		$_SESSION['alert-msg'] = 'Disculpe, faltan datos';
@@ -16,6 +22,11 @@ if(empty($_POST['name'])  		||
 $name = $_POST['name'];
 $email_address = $_POST['email'];
 $message = $_POST['message'];
+$goals = $_POST['goals'];
+$references = $_POST['references'];
+$references2 = $_POST['references2'];
+$amount = $_POST['amount'];
+$endTime = $_POST['endTime'];
 
 require 'PHPMailer/class.phpmailer.php';
 
@@ -27,21 +38,26 @@ $mail->IsSMTP();
 // Configuración del servidor SMTP
 $mail->Port = 25;
 $mail->Host = 'aspmx.l.google.com';
-$mail->SMTPDebug  = 0;
+$mail->SMTPDebug  = 2;
+$mail->ContentType = 'text/html';
+$mail->CharSet = 'UTF-8';
 // Configuración cabeceras del mensaje
 $mail->From = "emilioaor@gmail.com";
 $mail->FromName = "Mi portafolio";
  
-$mail->AddAddress("emilioaor@gmail.com", "Emilio O");
+$mail->AddAddress("emilioaor@gmail.com", "Emilio Ochoa");
 $mail->Subject = "Mi portafolio - Contactos:  $name";
  
 // Creamos en una variable el cuerpo, contenido HMTL, del correo
-$body  = "Has recibido un mensaje desde la página de contactos.\n\n"."He aquí los detalles:\n\nNombre: $name\n\nCorreo: $email_address\n\nMensaje:\n$message";
+require 'emailTemplate.php';
  
 $mail->Body = $body;
  
 // Enviar el correo 
-$mail->Send(); 
+if (! $mail->Send()) {
+   $_SESSION['alert-msg'] = 'Disculpe, ocurrio un error de comunicación';
+   $_SESSION['alert-type'] = 'alert-danger';
+} 
 
 //Alert
 $_SESSION['alert-msg'] = 'Su mensaje fue enviado satisfactoriamente';

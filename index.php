@@ -465,41 +465,76 @@
 			<h2 class="secondary-title text-center">Contacto</h2>
 			<hr class="hr">
 
-			<p class="text-center">
-				¿Listo para iniciar tu proyecto?. Cuentame un poco a traves del siguiente formulario.
-			</p>
-
 			<div class="row">
-				
-				<div class="col-sm-6 col-sm-offset-3">
+				<div class="col-sm-8 col-sm-offset-2">
+					<p class="text-center">
+						¿Listo para iniciar tu proyecto?. Respondiendo esta serie de preguntas podremos alcanzar los resultados que esperas.
+					</p>
+				</div>
+			</div>
+
+
+			<form action="mail/contact_me.php" method="POST">
+				<div class="row">
 					
-					<form action="mail/contact_me.php" method="POST">
+					<div class="col-sm-6">
 				
 						<div class="form-group">
-							<label for="name">Nombre</label>
-							<input type="text" id="name" name="name" class="form-control" placeholder="Nombre" required="required">
+							<input type="text" id="name" name="name" class="form-control" placeholder="Mi nombre es Emilio Ochoa. ¿Y el tuyo?" required="required" tabindex="1">
 						</div>
 
 						<div class="form-group">
-							<label for="email">Email</label>
-							<input type="email" id="email" name="email" class="form-control" placeholder="Email" required="required">
+							<textarea id="goals" name="goals" class="form-control" rows="4" placeholder="¿Cuales son los objetivos que deseas alcanzar con tu pagina web?" required="required" tabindex="3"></textarea>
 						</div>
 
 						<div class="form-group">
-							<label for="message">Mensaje</label>
-							<textarea id="message" name="message" class="form-control" rows="5" placeholder="Mensaje" required="required"></textarea>
+							<textarea id="references" name="references" class="form-control" rows="4" placeholder="Pásame el link de una o mas paginas cuya estructura o diseño te agrade así no sea de tu rubro" required="required" tabindex="5"></textarea>
 						</div>
 
-						<div class="text-center">
-							<button class="btn-primary-medium"><span class="glyphicon glyphicon-envelope"></span> Enviar</button>
+						<div class="form-group" tabindex="6">
+							<select name="amount" id="amount" class="form-control">
+								<option>¿Cuanto tenias pensado invertir?</option>
+								<option>500.000 - 1.000.000 VEF</option>
+								<option>1.000.001 - 1.500.000 VEF</option>
+								<option>1.500.001 - 2.000.000 VEF</option>
+								<option>2.000.001 o mas VEF</option>
+							</select>
 						</div>
 
-					</form>
+					</div>
+
+					<div class="col-sm-6">
+						
+						<div class="form-group">
+							<input type="email" id="email" name="email" class="form-control" placeholder="Email para poder comunicarnos" required="required" tabindex="2">
+						</div>
+
+						<div class="form-group">
+							<textarea id="references2" name="references2" class="form-control" rows="4" placeholder="Pásame el link de una o mas paginas de la competencia que consideres este haciendo un buen trabajo" required="required" tabindex="4"></textarea>
+						</div>
+
+						<div class="form-group">
+							<textarea id="message" name="message" class="form-control" rows="4" placeholder="¿Algo mas que decir?. Este es el momento, deja todo los mas detallado posible para brindarte un mejor servicio" required="required" tabindex="5"></textarea>
+						</div>
+
+						<div class="form-group">
+							<input type="text" id="endTime" name="endTime" class="form-control" placeholder="¿En cuanto tiempo esperas recibir tu proyecto culminado?" required="required" tabindex="7">
+						</div>
+
+					</div>
+
+			
 
 				</div>
 
-			</div>
-
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="text-center">
+							<button class="btn-primary-medium"><span class="glyphicon glyphicon-envelope"></span> Enviar</button>
+						</div>
+					</div>
+				</div>
+			</form>
 		</div>
 
 	</section>
@@ -1188,5 +1223,16 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="slider/js/main.js"></script>
+	
+	<?php if (isset($_GET['sec']) && $section = $_GET['sec']) : ?>
+
+		<!-- Ir a la seccion especificada -->	
+		<script>
+			$(window).ready(function() {
+				goTo('#<?php echo $section ?>');
+			});
+		</script>
+
+	<?php endif ?>
 </body>
 </html>
