@@ -207,7 +207,7 @@ footer {
 	font-size: 2rem;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 800px) {
 	#items-collapse li {
 		width: 100%;
 		clear: both;
