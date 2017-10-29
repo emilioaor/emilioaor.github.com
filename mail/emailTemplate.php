@@ -4,7 +4,7 @@
 	<head>
 		<meta charset='UTF-8'>
 		<title></title>
-		<link href='https://fonts.googleapis.com/css?family=Cantata+One|Oswald|Roboto+Condensed' rel='stylesheet'>
+		
 	</head>
 	<body>
 		<style>
@@ -76,7 +76,7 @@
 				padding: 5px 10px;
 			}
 			.social-icon {
-				background-image: url(https://emilioochoa.com.ve/img/social-icons/social-icons.svg) !important;
+				
 			}
 			#social {
 				text-align: center;
@@ -134,18 +134,10 @@
 				$endTime
 			</p>
 			<footer>
-				<div id='social'>
-					<h2 class='secondary-title'>Redes sociales</h2>
-					<ul>
-						<li><a href='https://www.facebook.com/emilioaor' target='_blank'><span class='social-icon facebook'></span></a></li>
-						<li><a href='https://github.com/emilioaor' target='_blank'><span class='social-icon github'></span></a></li>
-						<li><a href='https://www.linkedin.com/in/emilio-ochoa-458161117/' target='_blank'><span class='social-icon linkedin'></span></a></li>
-						<li><a href='https://www.youtube.com/channel/UCIsv-YGxFzg8jZvMzalgSqg' target='_blank'><span class='social-icon youtube'></span></a></li>
-					</ul>
-				</div>
+				
 			</footer>
 		</div>
 	</body>
 	</html>
 
-";echo $body; ?>
+"; ?>
