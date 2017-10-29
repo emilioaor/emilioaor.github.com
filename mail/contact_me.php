@@ -47,7 +47,7 @@ $mail->CharSet = 'UTF-8';
 
 //$mail->SMTPSecure = 'ssl';
 // Configuración cabeceras del mensaje
-$mail->SetFrom = "emilioaor@gmail.com";
+$mail->From = "emilioaor@gmail.com";
 $mail->FromName = "Mi portafolio";
  
 $mail->AddAddress("emilioaor@gmail.com", "Emilio Ochoa");
