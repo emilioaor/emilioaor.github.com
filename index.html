@@ -1,12 +1,3 @@
-<?php
-	session_start();
-	if (isset($_SESSION['alert-msg']) && isset($_SESSION['alert-type'])) {
-		$message = $_SESSION['alert-msg'];
-		$type = $_SESSION['alert-type'];
-		unset($_SESSION['alert-msg']);
-		unset($_SESSION['alert-type']);
-	}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,19 +10,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Cantata+One|Oswald|Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
-	
-	<?php if (isset($message) && isset($type)) { ?>
-			
-			<!-- if have alert -->
-			<div id="space-alert">
-				<div class="alert <?php echo $type ?> alert-dismissible" role="alert">
-				  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				  <strong>Atención!</strong> <?php echo $message ?>
-				</div>
-			</div>
-
-	<?php } ?>
-
 	<div id="loading"></div>
 
 	<nav id="navbar">
@@ -1223,16 +1201,5 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="slider/js/main.js"></script>
-	
-	<?php if (isset($_GET['sec']) && $section = $_GET['sec']) : ?>
-
-		<!-- Ir a la seccion especificada -->	
-		<script>
-			$(window).ready(function() {
-				goTo('#<?php echo $section ?>');
-			});
-		</script>
-
-	<?php endif ?>
 </body>
 </html>
